@@ -4,26 +4,25 @@
  * @fileOverview Mailgun mailer.
  */
 
-var util = require('util'),
-  nodemailerMailgunTransport = require('nodemailer-mailgun-transport');
+var nodemailerMailgunTransport = require('nodemailer-mailgun-transport');
 
 var waigo = require('waigo'),
   _ = waigo._;
 
 
-var Mailer = waigo.load('support/mailer/base').Mailer;
+var Mailer = waigo.load('support/mailer/base');
 
 
-var Mailgun = function(app, config) {
-  Mailgun.super_.call(this, app, config, app.logger.create('Mailgun'));
-};
-util.inherits(Mailgun, Mailer);
+class Mailgun extends Mailer {
+  constructor (app, config) {
+    super(app, config, app.logger.create('Mailgun'));
+  }
 
+  * send (options) {
+    yield this._send(options);
+  }
+}
 
-
-Mailgun.prototype.send = function*(options) {
-  yield this._send(options);
-};
 
 
 exports.create = function*(app, config) {
@@ -38,3 +37,5 @@ exports.create = function*(app, config) {
 
   return c;
 };
+
+
