@@ -1,6 +1,6 @@
 This [waigo](http://waigojs.com) plugin provides:
 
-* 'mailgun' mailer to allow emails to be sent through Mailgun's API.
+* `mailgun` - mailer implementation to allow emails to be sent through [Mailgun](https://www.mailgun.com/).
 
 ## Installation
 
