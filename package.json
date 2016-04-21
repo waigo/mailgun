@@ -1,0 +1,33 @@
+{
+  "name": "waigo-mailgun",
+  "version": "1.0.0",
+  "description": "Mailgun mailer support for waigo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waigo/mailgun.git"
+  },
+  "keywords": [
+    "waigo",
+    "waigoplugin",
+    "mailer",
+    "mailgun"
+  ],
+  "author": "Ramesh Nair <ram@hiddentao.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/waigo/mailgun",
+  "peerDependencies": {
+    "waigo": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "engine-strict": true,
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/waigo/mailgun/issues"
+  },
+  "dependencies": {
+    "nodemailer-mailgun-transport": "^1.0.1"
+  }
+}
