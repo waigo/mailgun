@@ -26,9 +26,6 @@ module.exports = function(config) {
     },
     ...
   };
-
-  config.sitemapPath = '/custom_sitemap.xml';  // relative to baseURL
-
   ...
 }
 ```
