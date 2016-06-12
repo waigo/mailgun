@@ -1,3 +1,5 @@
+# waigo-plugin-mailgun
+
 This [waigo](http://waigojs.com) plugin provides:
 
 * `mailgun` - mailer implementation to allow emails to be sent through [Mailgun](https://www.mailgun.com/).
@@ -5,7 +7,7 @@ This [waigo](http://waigojs.com) plugin provides:
 ## Installation
 
 ```bash
-$ npm install waigo-mailgun
+$ npm install waigo-plugin-mailgun
 ```
 
 ## Usage
