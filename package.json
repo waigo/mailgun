@@ -1,6 +1,6 @@
 {
   "name": "waigo-plugin-mailgun",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Mailgun mailer support for waigo (plugin)",
   "main": "index.js",
   "repository": {
