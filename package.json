@@ -28,6 +28,6 @@
     "url": "https://github.com/waigo/mailgun/issues"
   },
   "dependencies": {
-    "nodemailer-mailgun-transport": "^1.0.1"
+    "nodemailer-mailgun-transport": "^1.2.1"
   }
 }
